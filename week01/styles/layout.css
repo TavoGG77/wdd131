@@ -1,0 +1,48 @@
+body {
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+    height: 100vh;
+}
+header {
+    background-color: cadetblue;
+    padding: 1rem;
+    grid-column: 1/4;
+}
+main {
+    background-color: brown;
+    padding: 2rem;
+    grid-column: 2/3;
+}
+.right-side {
+    background-color: salmon;
+    padding: 2rem;
+    grid-column: 3/4;
+}
+footer {
+    background-color: seagreen;
+    padding: 2rem;
+    grid-column: 1/4;
+    text-align: center;
+}
+.navigation {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #333;
+    align-items: center;
+}
+.navigation li {
+    flex: 1 1 auto;
+}
+.navigation a {
+    font-weight: 700;
+    display: block;
+    color: #eee;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+}
+.navigation a:hover {
+    text-decoration: underline;
+    text-decoration-color: yellow;
+}
